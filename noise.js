@@ -21,33 +21,29 @@ $(document).ready( function() {
     eNote.play();
   });
 
-   $('div.instrument > .note_f').click(function(){
+  $('div.instrument > .note_f').click(function(){
 
     var fNote = $('div#audio_embeds > #fAudio')[0];
     fNote.play();
   });
 
-    $('div.instrument > .note_g').click(function(){
+  $('div.instrument > .note_g').click(function(){
 
     var gNote = $('div#audio_embeds > #gAudio')[0];
     gNote.play();
   });
 
+  $('div.instrument > .note_a').click(function(){
 
+    var aNote = $('div#audio_embeds > #aAudio')[0];
+    aNote.play();
+  });
+
+  $('div.instrument > .note_b').click(function(){
+
+    var bNote = $('div#audio_embeds > #bAudio')[0];
+    bNote.play();
+  });
 });
-  // $('div.instrument > note c').click()function()) {
-    // alert("That thing you wanted to work WERKED!")
-  // })
-
-  // noteC.addEventListener('ended', function() {
-    //     this.currentTime = 0;
-    //     this.play();
-    // }, false);
-    
-    // $('#play').click(function() {
-    //     noteC.play();
-    // });
-    
-    // $('#pause').click(function() {
-    //     noteC.pause();
-    // });
+  
+  // TODO JM-RIVES FIX broken CSS/ HTML
