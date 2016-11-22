@@ -1,18 +1,33 @@
 'use strict'
 
-console.log("Nothings happend yet.");
-
 $(document).ready( function() {
-  console.log("Inside the first fxn, nothings happened yet either");
+
 
   $('div.instrument > .note_c').click(function(){
-    console.log("Inside .click() fxn");
 
     var cNote = $('div#audio_embeds > #cAudio')[0];
-
     cNote.play();
-    
-    // noteC.addEventListener('ended', function() {
+  });
+
+  $('div.instrument > .note_d').click(function(){
+
+    var dNote = $('div#audio_embeds > #dAudio')[0];
+    dNote.play();
+  });
+
+  $('div.instrument > .note_e').click(function(){
+
+    var eNote = $('div#audio_embeds > #eAudio')[0];
+    eNote.play();
+  });
+
+
+});
+  // $('div.instrument > note c').click()function()) {
+    // alert("That thing you wanted to work WERKED!")
+  // })
+
+  // noteC.addEventListener('ended', function() {
     //     this.currentTime = 0;
     //     this.play();
     // }, false);
@@ -24,11 +39,3 @@ $(document).ready( function() {
     // $('#pause').click(function() {
     //     noteC.pause();
     // });
-
-
-    console.log("Did that thing happen? NOPE");
-  });
-});
-  // $('div.instrument > note c').click()function()) {
-    // alert("That thing you wanted to work WERKED!")
-  // })
