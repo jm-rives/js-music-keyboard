@@ -21,6 +21,18 @@ $(document).ready( function() {
     eNote.play();
   });
 
+   $('div.instrument > .note_f').click(function(){
+
+    var fNote = $('div#audio_embeds > #fAudio')[0];
+    fNote.play();
+  });
+
+    $('div.instrument > .note_g').click(function(){
+
+    var gNote = $('div#audio_embeds > #gAudio')[0];
+    gNote.play();
+  });
+
 
 });
   // $('div.instrument > note c').click()function()) {
