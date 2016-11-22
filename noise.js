@@ -7,7 +7,25 @@ $(document).ready( function() {
 
   $('div.instrument > .note_c').click(function(){
     console.log("Inside .click() fxn");
-    $('div.audio > cAudio')[0].play();
+
+    var cNote = $('div#audio_embeds > #cAudio')[0];
+
+    cNote.play();
+    
+    // noteC.addEventListener('ended', function() {
+    //     this.currentTime = 0;
+    //     this.play();
+    // }, false);
+    
+    // $('#play').click(function() {
+    //     noteC.play();
+    // });
+    
+    // $('#pause').click(function() {
+    //     noteC.pause();
+    // });
+
+
     console.log("Did that thing happen? NOPE");
   });
 });
